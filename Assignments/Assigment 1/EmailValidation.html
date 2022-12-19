@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script>
+
+        function validateEmail(email) {
+
+            // regex pattern for email
+            const re = /\S+@\S+\.\S+/g;
+
+            // check if the email is valid
+            let result = re.test(email);
+            if (result) {
+                console.log('The email is valid.');
+            }
+            else {
+                console.log('The email is Invalid.');
+
+            }
+        }
+        let email = prompt('Enter an email: ');
+
+        validateEmail(email);
+    </script>
+
+
+</head>
+<bod>
+    <p style="text-align: center;">Example Of Email Validation</p>
+</bod>
+
+</html>

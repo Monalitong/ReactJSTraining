@@ -1,0 +1,31 @@
+<html>
+
+<head>
+   
+</head>
+
+<body>
+    <p style="text-align: center;">Example Of Reverse String</p>
+    <input id="txt1" type="text" />
+    <p id="p1" title=""></p>
+    <button onclick=reverseString(str1)>Reverse String</button>
+
+    <script>
+        //debugger;
+        var str1 = "";
+        //let str1="Monali";
+        function reverseString(str1) {
+
+            str1 = document.getElementById("txt1").value;
+            let reverStr = "";
+            for (let i = 0; i < str1.length; i++) {
+                reverStr = str1[i] + reverStr;
+            }
+
+            document.getElementById("p1").innerHTML = reverStr;
+        }
+
+    </script>
+</body>
+
+</html>

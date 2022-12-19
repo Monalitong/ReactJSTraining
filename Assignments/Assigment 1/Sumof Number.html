@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script>
+        function Sum(x, y) {
+            //add two numbers
+            var a=document.getElementById("txt1").value;
+            var b=document.getElementById("txt2").value;
+            const sum = parseInt(a) + parseInt(b);
+
+            alert(`The sum of ${a} and ${b} is ${sum}`);
+            //console.log(`The sum of ${a} and ${b} is ${sum}`);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h5>Enter the first number: </h5>
+        <input type="text" id="txt1" />
+        <h5>Enter the second number: </h5>
+        <input type="text" id="txt2" />
+        <label id="lbl1" title=""></label>
+        <button onclick="Sum()">Sum</button>
+    </div>
+</body>
+
+</html>

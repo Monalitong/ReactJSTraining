@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <div>
+        <h4>Enter Any String</h4>
+        <input type="text" id="txt1" /></div></br>
+        <label id="lbl1" style="color: brown;font-style: italic;"></label></br>
+        <button onclick="vowel_Count(str)">Get Vowel's</button>
+    </div>
+
+    <script>
+
+        let str = "";
+        //debugger;
+        function vowel_Count(str) {
+            let strvowel = "";
+            strvowel = document.getElementById("txt1").value;
+            strvowel = strvowel.replace(/[^aeiou]/g, "").length;
+
+            console.log(` There are ${strvowel}  Vowel's in a ${document.getElementById("txt1").value} `);
+            document.getElementById("lbl1").innerHTML = strvowel;
+        }
+
+    </script>
+</body>
+
+</html>
